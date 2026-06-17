@@ -1,0 +1,179 @@
+OLYMPIC GAMES DATASET (athlete_events.csv)
+📥 Load & Inspect
+python
+df = pd.read_csv('athlete_events.csv')
+# Columns: ID, Name, Sex, Age, Height, Weight, Team, NOC, Games, Year, Season, City, Sport, Event, Medal
+🟢 BEGINNER TASKS
+Basic Stats
+
+How many total Olympics are in the dataset?
+
+How many unique sports? Unique countries (NOC)?
+
+Count male vs female athletes
+
+Which year had the most participants?
+
+Filters
+
+Select all gold medalists
+
+Find all swimming events
+
+Select athletes from USA (NOC = 'USA')
+
+Find summer vs winter games count
+
+Aggregations
+
+Count medals by country (Top 10)
+
+Count medals by sport (Top 10)
+
+Find average age of medalists vs non-medalists
+
+Count male vs female medal winners
+
+🟡 INTERMEDIATE TASKS
+Multi-Year Analysis
+
+python
+# Medal trends over time
+df.groupby(['Year', 'Medal']).size().unstack().plot()
+Which country won the most gold medals each year?
+
+Track USA medal count over time
+
+Find countries that hosted and won the most medals
+
+Compare Summer vs Winter medal counts by country
+
+Athlete Analysis
+
+Find athletes who competed in multiple Olympics
+
+Calculate age distribution for each sport
+
+Which sport has the oldest average age? Youngest?
+
+Find athletes who won medals in different sports
+
+Height & Weight
+
+Average height of medalists vs non-medalists (by sport)
+
+Is there a correlation between height and medal winning?
+
+Find sport with tallest athletes (average height)
+
+BMI analysis (create BMI column, compare medalists)
+
+🔴 ADVANCED TASKS
+Performance Trends
+
+python
+# Country performance over time
+usa_medals = df[df['NOC'] == 'USA'].groupby(['Year', 'Medal']).size()
+Which countries improved the most over time?
+
+Find sports where women outperform men
+
+Track participation of women over the years
+
+Identify countries that won their first gold medal
+
+Champion Analysis
+
+Find athletes with the most medals (total, by type)
+
+Identify athletes who medaled in consecutive Olympics
+
+Find youngest and oldest medalists (by sport)
+
+Multiple medal winners in a single Olympics
+
+Host City Analysis
+
+python
+# Home advantage
+host_medals = df[df['City'] == df['City']]  # Complex condition
+Do host countries win more medals?
+
+Compare performance when hosting vs not hosting
+
+Which city hosted the most Olympics?
+
+Complex Grouping
+
+python
+# Medal efficiency (medals per athlete)
+medal_efficiency = df.groupby('NOC').agg({
+    'Medal': 'count',
+    'ID': 'nunique'
+})
+medal_efficiency['Efficiency'] = medal_efficiency['Medal'] / medal_efficiency['ID']
+Which country has the best medals-per-athlete ratio?
+
+Which sport yields the most medals per country?
+
+Find team sports vs individual sports medal distribution
+
+🏅 BONUS: SUMMER vs WINTER OLYMPICS (Combined Dataset)
+🔴 ADVANCED COMPARISON TASKS
+Season Comparison
+
+python
+summer = df[df['Season'] == 'Summer']
+winter = df[df['Season'] == 'Winter']
+Compare average athlete age in Summer vs Winter
+
+Which sports are in both seasons? Which are unique?
+
+Compare medal distribution by gender across seasons
+
+Which countries excel in Summer vs Winter?
+
+Sports Evolution
+
+Which sports were added/removed over time?
+
+Track the number of events per sport over years
+
+Find sports where women's participation increased most
+
+Which is the most gender-equal sport?
+
+Country Specialization
+
+python
+# Find sports where countries dominate
+dominant = df[df['Medal'].notna()].groupby(['NOC', 'Sport']).size()
+Which countries dominate specific sports?
+
+Find countries that excel in niche sports
+
+Compare diversity of medals (wide range of sports vs specialized)
+
+Age Analysis by Era
+
+Has the average age of medalists changed over time?
+
+Which decade had the youngest medalists?
+
+Is there an age difference between gold, silver, bronze?
+
+Track age trends in specific sports (gymnastics vs equestrian)
+
+Country Evolution
+
+python
+# Country performance over time
+country_timeline = df.groupby(['NOC', 'Year'])['Medal'].count().unstack()
+Which countries consistently improve?
+
+Identify countries that had a "golden era" (peak performance)
+
+Find countries that have never won a medal
+
+Track political impacts (e.g., USSR, East Germany)
+

@@ -1,0 +1,223 @@
+1. Movie Data Explorer
+Dataset: tmdb_5000_movies.csv (from Kaggle) or any movie dataset
+
+Tasks:
+
+Find the top 10 highest-grossing movies
+
+Calculate average runtime by genre
+
+Find the director with the most movies
+
+Create a profit column (revenue - budget) and find most profitable movies per year
+
+Find movies with highest ROI (return on investment)
+
+Analyze release month patterns—which month has the most releases?
+
+Key pandas skills: groupby, sort_values, pivot_table, str.contains, datetime conversion
+
+
+2. Sales Data Analysis
+Dataset: Create your own or use supermarket_sales.csv from Kaggle
+
+Tasks:
+
+Calculate total sales per product category
+
+Find the best and worst performing branch
+
+Identify peak sales hours (if you have time data)
+
+Find the top 5 customers by total spending
+
+Calculate average transaction value by gender
+
+Create a monthly sales trend (resample time series)
+
+Key pandas skills: groupby, agg, resample, value_counts, nlargest, nsmallest
+
+3. Employee Data Dashboard
+Dataset: Generate synthetic employee data (Name, Department, Salary, Years_Experience, Performance_Score)
+
+Tasks:
+
+Calculate average salary per department
+
+Find employees with salary > 2x department average (outliers)
+
+Create performance brackets (Poor/Avg/Excellent) using pd.cut
+
+Calculate tenure (years since hire date)
+
+Find the department with highest average performance score
+
+Create salary percentiles per department
+
+Key pandas skills: cut, qcut, transform, rank, map, apply
+
+📈 INTERMEDIATE PROJECTS (Multi-table & Advanced Logic)
+4. E-commerce Order-Product Analysis
+Dataset: Use 3 CSV files: orders.csv, products.csv, customers.csv
+
+Tasks:
+
+Merge orders with products to get total order value
+
+Find customers who ordered more than once
+
+Calculate customer lifetime value (total spent per customer)
+
+Find most popular product combinations (bought together)
+
+Calculate monthly active users
+
+Identify high-value customers (top 10% spenders)
+
+Key pandas skills: merge (inner/outer/left), concat, duplicated, pivot_table, cumsum
+
+5. Stock Portfolio Tracker
+Dataset: Download historical stock data (Yahoo Finance CSV) for 3-5 companies
+
+Tasks:
+
+Calculate daily returns for each stock
+
+Compute 50-day and 200-day moving averages
+
+Find correlation between stocks
+
+Calculate portfolio performance (equal weight)
+
+Identify days with highest volatility
+
+Backtest a simple strategy (buy when price > 50MA)
+
+Key pandas skills: pct_change, rolling, corr, shift, merge_asof, fillna
+
+6. Census Data Analyzer
+Dataset: adult.csv (US Census Income Data) from UCI or Kaggle
+
+Tasks:
+
+Find income distribution by education level
+
+Calculate employment rate by marital status
+
+Find the most common occupations per state
+
+Analyze age vs. income (bin age groups)
+
+Find gender pay gap across different job types
+
+Create a demographic profile of high-income earners
+
+Key pandas skills: crosstab, groupby with multiple columns, pivot, value_counts with normalize
+
+🚀 ADVANCED PROJECTS (Complex Logic & Optimization)
+7. Log File Analysis
+Dataset: Server log file (CSV format with timestamps, user_id, action, duration, etc.)
+
+Tasks:
+
+Calculate daily active users and session lengths
+
+Find user churn (users inactive for 30+ days)
+
+Detect suspicious behavior (users with >100 actions in a day)
+
+Calculate average time between user actions
+
+Find most common user journey sequences
+
+Identify peak usage times
+
+Key pandas skills: diff, shift, rolling with custom functions, groupby with nth, expanding
+
+8. FIFA Player Analysis
+Dataset: fifa_players.csv from Kaggle
+
+Tasks:
+
+Find the best player at each position using weighted scores
+
+Create age cohorts (20-25, 25-30, etc.) and compare stats
+
+Identify undervalued players (low wage, high rating)
+
+Find clubs with highest average player rating
+
+Analyze nationality trends (which country has best players)
+
+Create a "Dream Team" by selecting best at each position
+
+Key pandas skills: nlargest with custom columns, apply with complex functions, drop_duplicates with keep='last', assign
+
+9. Time Series Weather Analysis
+Dataset: Historical weather data (temperature, humidity, pressure) for 5+ years
+
+Tasks:
+
+Find seasonal temperature trends
+
+Detect outliers (unusually hot/cold days)
+
+Calculate monthly averages and compare across years
+
+Find the longest streak of rain/high-temperature days
+
+Analyze correlation between humidity and temperature
+
+Create rolling averages with different windows
+
+Key pandas skills: resample with agg, rolling with min_periods, diff for change detection, expanding mean
+
+10. Customer Transaction Funnel
+Dataset: E-commerce data with stages: views → carts → purchases
+
+Tasks:
+
+Calculate conversion rates at each stage (overall and by segment)
+
+Find average time between stages
+
+Identify where users drop off most
+
+Segment users by device and compare conversion
+
+Find products with highest add-to-cart but low purchase rate (potential issues)
+
+Calculate monthly funnel changes (trending up/down)
+
+Key pandas skills: merge with indicator, value_counts with normalize, pivot_table with margins, custom aggregation functions
+
+🎯 BONUS CHALLENGE: Data Cleaning Project
+11. Messy Data Cleaner
+Dataset: Find a messy CSV with:
+
+Missing values (NaNs)
+
+Inconsistent date formats
+
+Duplicate rows
+
+Mixed data types in columns
+
+Outliers
+
+Tasks:
+
+Identify and handle missing values (impute or drop)
+
+Standardize date formats to single format
+
+Remove duplicate rows (keeping latest/oldest)
+
+Fix data types (convert strings to numbers, dates)
+
+Detect and cap/remove outliers using IQR method
+
+Document your cleaning steps
+
+Key pandas skills: isnull, fillna, dropna, to_datetime, astype, duplicated, quantile, clip
+

@@ -1,0 +1,115 @@
+TITANIC DATASET (titanic.csv)
+📥 Load & Inspect
+python
+import pandas as pd
+df = pd.read_csv('titanic.csv')
+🟢 BEGINNER TASKS
+Basic Statistics
+
+What's the overall survival rate? (mean() of Survived)
+
+Find average age, fare, and number of siblings/spouses
+
+Count missing values in each column
+
+Show unique values in Pclass, Sex, Embarked
+
+Filtering & Selection
+
+Select all female passengers who survived
+
+Show passengers who paid > $50 fare
+
+Find all passengers under 18 years old
+
+Select first-class passengers with no siblings/spouses
+
+Aggregations
+
+Calculate survival rate by gender
+
+Find average fare by passenger class
+
+Count passengers by embarkation port (Embarked)
+
+🟡 INTERMEDIATE TASKS
+Age Analysis
+
+python
+# Create age groups
+bins = [0, 12, 18, 30, 50, 100]
+labels = ['Child', 'Teen', 'Young Adult', 'Adult', 'Senior']
+df['Age_Group'] = pd.cut(df['Age'], bins=bins, labels=labels)
+Find survival rate per age group
+
+Calculate average fare per age group
+
+Which age group had the most survivors?
+
+Family Analysis
+
+Create a Family_Size column = SibSp + Parch + 1
+
+Find survival rate by family size
+
+Did large families (>4) survive? What about singles?
+
+Create Is_Alone column (True if Family_Size = 1) and analyze survival
+
+Cabin & Ticket
+
+Extract cabin deck (first letter of Cabin)
+
+Count passengers with vs without cabin
+
+Does having a cabin affect survival?
+
+Find number of passengers sharing same ticket (Ticket)
+
+🔴 ADVANCED TASKS
+Imputation & Cleaning
+
+python
+# Impute missing Age with median age by Pclass
+df['Age'] = df.groupby('Pclass')['Age'].transform(
+    lambda x: x.fillna(x.median())
+)
+Impute missing Embarked with mode
+
+Decide what to do with missing Cabin (drop or create 'Unknown')
+
+Impute Fare missing values with median fare by Pclass
+
+Cross-Tabulations
+
+python
+# Survival by class and gender
+pd.crosstab([df['Pclass'], df['Sex']], df['Survived'], normalize='index')
+Create survival rate pivot table: rows = Pclass, columns = Sex
+
+Find survival by embarkation port and class
+
+Calculate age distribution by survival status
+
+Feature Engineering
+
+Create Title from Name (Mr, Mrs, Miss, Master, etc.)
+
+Analyze survival by title
+
+Create Ticket_Frequency (how many people have same ticket)
+
+Create Fare_Per_Person = Fare / Family_Size
+
+Create Is_Child (age < 18)
+
+Advanced Filtering
+
+Find families that survived together (same ticket, family members)
+
+Find women in 3rd class who survived
+
+Identify passengers who had both parents and children on board
+
+Find top 10 most expensive tickets
+
