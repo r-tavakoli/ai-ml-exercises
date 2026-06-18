@@ -8,5 +8,7 @@ env/
 ENV/
 .env
 
-
+# Others
 .pyc
+.txt
+__pycache__/
