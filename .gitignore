@@ -9,6 +9,6 @@ ENV/
 .env
 
 # Others
-.pyc
-.txt
+*.pyc
+*.txt
 __pycache__/
