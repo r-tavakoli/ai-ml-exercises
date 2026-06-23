@@ -18,4 +18,4 @@ datasets/mnist_ubyte/
 
 # Large dataset files
 datasets/mnist_csv/
-supervised/train.csv
+supervised/train.csvsupervised/test.csv
