@@ -12,3 +12,6 @@ ENV/
 *.pyc
 *.txt
 __pycache__/
+
+mnist_ubyte
+mnist_csv
