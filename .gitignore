@@ -15,3 +15,7 @@ __pycache__/
 
 datasets/mnist_csv/
 datasets/mnist_ubyte/
+
+# Large dataset files
+datasets/mnist_csv/
+supervised/train.csv
