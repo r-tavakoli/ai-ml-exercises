@@ -8,14 +8,23 @@ env/
 ENV/
 .env
 
-# Others
+# Python cache
 *.pyc
-*.txt
 __pycache__/
 
+
+# Specific folders and large files
 datasets/mnist_csv/
 datasets/mnist_ubyte/
+supervised/train.csv
+supervised/test.csv
 
-# Large dataset files
-datasets/mnist_csv/
-supervised/train.csvsupervised/test.csv
+# large files
+*.pkl
+*.h5
+*.pth
+*.pt
+*.onnx
+*.pb
+*.gz
+*.zip
