@@ -13,5 +13,5 @@ ENV/
 *.txt
 __pycache__/
 
-mnist_ubyte
-mnist_csv
+mnist_ubyte/
+mnist_csv/
