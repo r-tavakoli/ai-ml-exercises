@@ -1,21 +1,4 @@
-1. Movie Data Explorer
-Dataset: tmdb_5000_movies.csv (from Kaggle) or any movie dataset
 
-Tasks:
-
-Find the top 10 highest-grossing movies
-
-Calculate average runtime by genre
-
-Find the director with the most movies
-
-Create a profit column (revenue - budget) and find most profitable movies per year
-
-Find movies with highest ROI (return on investment)
-
-Analyze release month patterns—which month has the most releases?
-
-Key pandas skills: groupby, sort_values, pivot_table, str.contains, datetime conversion
 
 
 2. Sales Data Analysis
