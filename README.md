@@ -12,4 +12,4 @@
 
 > ⚠️ **Project Status**: This repo is currently **in progress** and is being built purely for **educational and practice purposes**.
 
-> 🤖 **Note**: Most of the comments in this codebase were written with the assistance of AI language models to improve code documentation and understanding.
+> 🤖 **Note**: Some of the comments in the codes were enhanced with the assistance of AI language models to improve code documentation and understanding.
