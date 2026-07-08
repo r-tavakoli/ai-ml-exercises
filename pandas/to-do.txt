@@ -1,44 +1,5 @@
 
 
-
-2. Sales Data Analysis
-Dataset: Create your own or use supermarket_sales.csv from Kaggle
-
-Tasks:
-
-Calculate total sales per product category
-
-Find the best and worst performing branch
-
-Identify peak sales hours (if you have time data)
-
-Find the top 5 customers by total spending
-
-Calculate average transaction value by gender
-
-Create a monthly sales trend (resample time series)
-
-Key pandas skills: groupby, agg, resample, value_counts, nlargest, nsmallest
-
-3. Employee Data Dashboard
-Dataset: Generate synthetic employee data (Name, Department, Salary, Years_Experience, Performance_Score)
-
-Tasks:
-
-Calculate average salary per department
-
-Find employees with salary > 2x department average (outliers)
-
-Create performance brackets (Poor/Avg/Excellent) using pd.cut
-
-Calculate tenure (years since hire date)
-
-Find the department with highest average performance score
-
-Create salary percentiles per department
-
-Key pandas skills: cut, qcut, transform, rank, map, apply
-
 📈 INTERMEDIATE PROJECTS (Multi-table & Advanced Logic)
 4. E-commerce Order-Product Analysis
 Dataset: Use 3 CSV files: orders.csv, products.csv, customers.csv
