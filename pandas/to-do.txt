@@ -39,25 +39,6 @@ Backtest a simple strategy (buy when price > 50MA)
 
 Key pandas skills: pct_change, rolling, corr, shift, merge_asof, fillna
 
-6. Census Data Analyzer
-Dataset: adult.csv (US Census Income Data) from UCI or Kaggle
-
-Tasks:
-
-Find income distribution by education level
-
-Calculate employment rate by marital status
-
-Find the most common occupations per state
-
-Analyze age vs. income (bin age groups)
-
-Find gender pay gap across different job types
-
-Create a demographic profile of high-income earners
-
-Key pandas skills: crosstab, groupby with multiple columns, pivot, value_counts with normalize
-
 🚀 ADVANCED PROJECTS (Complex Logic & Optimization)
 7. Log File Analysis
 Dataset: Server log file (CSV format with timestamps, user_id, action, duration, etc.)
