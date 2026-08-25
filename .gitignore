@@ -29,3 +29,6 @@ datasets/creditcard.csv
 *.pb
 *.gz
 *.zip
+
+
+catboost_info/
