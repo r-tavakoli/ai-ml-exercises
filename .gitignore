@@ -4,9 +4,11 @@
 
 # Virtual environments
 venv/
+.venv/
 env/
 ENV/
 .env
+torch-test/
 
 # Python cache
 *.pyc
@@ -32,3 +34,5 @@ datasets/creditcard.csv
 
 
 catboost_info/
+
+neural_networks/data/
