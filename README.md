@@ -9,7 +9,22 @@
   <img src="https://img.shields.io/badge/Unsupervised_ML-9B59B6?style=for-the-badge&logo=scikit-learn&logoColor=white" />
 </p>
 
+# 🧠 Hands-On AI/ML
 
-> ⚠️ **Project Status**: This repo is currently **in progress** and is being built purely for **educational and practice purposes**.
+A practical, code-first repository of AI and machine learning exercises built with Python, scikit-learn, PyTorch, and Hugging Face.
+
+
+## 🎯 What You'll Find
+
+- **Supervised Learning** — regression, classification, tree-based models, ensembles, model evaluation
+- **Deep Learning** — neural networks, training loops, regularization, transfer learning
+- **Natural Language Processing** — text preprocessing, embeddings, transformers, fine-tuning
+- **Computer Vision** — CNNs, image classification, data augmentation, vision transformers
+
+## 🧭 Philosophy
+
+> *The best way to learn machine learning is to build machine learning.*
+
+Each notebook is self-contained: load data → explore → build → evaluate → iterate. Concepts are introduced exactly when they're needed to solve the problem at hand
 
 > 🤖 **Note**: Some of the comments in the codes were enhanced with the assistance of AI language models to improve code documentation and understanding.
