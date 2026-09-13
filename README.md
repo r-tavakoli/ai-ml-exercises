@@ -11,7 +11,7 @@
 
 # 🧠 Hands-On AI/ML
 
-A practical, code-first repository of AI and machine learning exercises built with Python, scikit-learn, PyTorch, and Hugging Face.
+A practical, repository of machine learning exercises built with Python, scikit-learn, PyTorch, and etc.
 
 
 ## 🎯 What You'll Find
